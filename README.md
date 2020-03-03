@@ -10,9 +10,6 @@ It introduces additional picture changes, so that when interacting with the fram
 
 Clone the flexInterval-folder into your Teleframe-addon-folder:
 
-
-To enable and disable addons and set simple configuration options, the command-line tool `~/TeleFrame/tools/addon_control.sh` is available.
-
 ```sh
 cd ~/TeleFrame/addons
 git clone https://github.com/call-me-matt/teleframe-flexintervals.git flexInterval

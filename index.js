@@ -47,11 +47,8 @@ const functionFlexIntervals = (interface) => {
     () => {
       counter = 1;
       // trigger next change
-      const now = new Date().getTime();
-      if ((nextChangeTime - now) > minChangeTime) {
-        nextChangeTime = now + minChangeTime;
-        setChangeTimer(minChangeTime);
-      }
+      nextChangeTime = new Date().getTime() + minChangeTime;
+      setChangeTimer(minChangeTime);
     });
 
   // additional handling for 'paused' event.

@@ -8,7 +8,7 @@ const functionFlexIntervals = (interface) => {
   var config;
   // show the image for at least two seconds and
   // calculate the real value as soon as the config is available
-  var minChangeTime = 2000;
+  var minChangeTime = 3000;
   var counter = 1;
   var isPaused = false;
   var changeTimeout = 0;
@@ -38,7 +38,7 @@ const functionFlexIntervals = (interface) => {
 
   interface.registerListener('teleFrame-ready', teleFrameObjects => {
     config = teleFrameObjects.config;
-    minChangeTime = Math.max(2000, Math.round(config.interval/config.imageCount));
+    minChangeTime = Math.max(minChangeTime, Math.round(config.interval/config.imageCount));
   });
   //interface.registerListener('newImage', (sender, type) => counter = 1);
 

@@ -18,8 +18,6 @@ git clone https://github.com/call-me-matt/teleframe-flexintervals.git flexInterv
 Use the addon_control script to enable or disable the addon:
 
 ```sh
-cd ~/TeleFrame
-
 # enable addon
 ~/TeleFrame/tools/addon_control.sh enable flexInterval
 
